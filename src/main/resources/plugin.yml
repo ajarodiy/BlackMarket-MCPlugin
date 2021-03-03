@@ -1,0 +1,10 @@
+name: BlackMarket
+version: ${project.version}
+main: me.hadzakee.blackmarket.BlackMarket
+api-version: 1.16
+depend: [Vault, MMOItems]
+authors: [ HadZakee ]
+description: Black Market plugin
+commands:
+  blackmarket:
+    aliases: [bm]

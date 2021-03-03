@@ -1,0 +1,64 @@
+# Plugin prefix for chat messages
+Prefix: "&#3289a8&l[&#24a7d6&lBlackMarket&#3289a8&l]"
+
+# Color for all plugin messages
+Message-Color: "&#1de02a"
+
+# Permissions
+# /bm
+BlackMarketCommand: "blackmarket.open"
+# /bm reload
+BlackMarketReloadConfig: "blackmarket.reload"
+# /bm session
+BlackMarketGenerateSession: "blackmarket.session"
+
+
+# Shop
+ResetTimer: 12  # In hours
+ShopSize: 1  # Minimum 1 row - Maximum 4 rows
+Items:
+  1:
+    Type: SWORD
+    Id: LONG_SWORD
+    MinimumPrice: 200000
+    MaximumPrice: 400000
+  2:
+    Type: ARMOR
+    Id: MYTHRIL_CHAINMAIL
+    MinimumPrice: 300000
+    MaximumPrice: 500000
+  3:
+    Type: DAGGER
+    Id: DRACULA_DAGGER
+    MinimumPrice: 500
+    MaximumPrice: 1000000
+  4:
+    Type: GEM_STONE
+    Id: RUBY
+    MinimumPrice: 500
+    MaximumPrice: 1000000
+  5:
+    Type: STAFF
+    Id: LIGHTNING_STAFF
+    MinimumPrice: 500
+    MaximumPrice: 1000000
+  6:
+    Type: BLOCK
+    Id: 3
+    MinimumPrice: 500
+    MaximumPrice: 1000000
+  7:
+    Type: WAND
+    Id: BLAZE_WAND
+    MinimumPrice: 500
+    MaximumPrice: 1000000
+  8:
+    Type: AXE
+    Id: SKULL_BREAKER
+    MinimumPrice: 500
+    MaximumPrice: 1000000
+  9:
+    Type: AXE
+    Id: SILVER_AXE
+    MinimumPrice: 500
+    MaximumPrice: 1000000
