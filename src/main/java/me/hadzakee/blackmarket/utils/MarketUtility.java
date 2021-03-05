@@ -20,6 +20,7 @@ public class MarketUtility {
     public static List<MarketItem> items = new ArrayList<>();
     public static List<MarketItem> itemsForCurrentSession = new ArrayList<>();
     public static HashMap<MarketItem, ItemStack> map = new HashMap<>();
+    public static List<String> playersWithMenuOpen = new ArrayList<>();
 
     public static List<MarketItem> getItemsForCurrentSession() {
         return itemsForCurrentSession;

@@ -1,6 +1,8 @@
 package me.hadzakee.blackmarket;
 
 import me.hadzakee.blackmarket.commands.BlackMarketCommand;
+import me.hadzakee.blackmarket.events.MarketClose;
+import me.hadzakee.blackmarket.events.PlayerLeave;
 import me.hadzakee.blackmarket.tasks.MenuUpdateTask;
 import me.hadzakee.blackmarket.utils.MarketItem;
 import me.hadzakee.blackmarket.utils.MarketUtility;
@@ -11,6 +13,7 @@ import net.milkbowl.vault.economy.Economy;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -50,7 +53,7 @@ public final class BlackMarket extends JavaPlugin {
 
         MarketUtility.createItemsForCurrentSession();
 
-        new MenuUpdateTask().runTaskTimer(this, 20, 20*5);
+        new MenuUpdateTask().runTaskTimer(this, 20, 20);
     }
 
     @Override
@@ -81,8 +84,8 @@ public final class BlackMarket extends JavaPlugin {
     }
 
     public void registerEvents() {
-
-
+        getServer().getPluginManager().registerEvents(new MarketClose(), this);
+        getServer().getPluginManager().registerEvents(new PlayerLeave(), this);
     }
 
 

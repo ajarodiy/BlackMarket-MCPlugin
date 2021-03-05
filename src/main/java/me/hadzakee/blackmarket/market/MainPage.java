@@ -57,6 +57,7 @@ public class MainPage extends Menu {
 
     @Override
     public void setMenuItems() {
+        MarketUtility.playersWithMenuOpen.add(player.getUniqueId().toString());
         setFillerGlass();
         ItemStack clock = makeItem(Material.CLOCK, ColorTranslator.translateColorCodes("&6&lBlack Market"), "",
                 ColorTranslator.translateColorCodes("&7Every reset will restock the shop  "),
